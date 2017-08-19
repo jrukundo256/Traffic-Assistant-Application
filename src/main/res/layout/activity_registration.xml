@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.google.android.gms.samples.vision.ocrreader.RegistrationActivity"
+android:background="#2e86c1"
+android:padding="20dp">
+
+<TextView
+    android:text="GET STARTED"
+    android:fontFamily="sans-serif"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/textView"
+    android:gravity="center"
+    android:textSize="20dp"
+    android:textColor="#fff"/>
+
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="#fbfefd"
+    android:inputType="textPersonName"
+    android:ems="10"
+    android:layout_below="@+id/textView"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:id="@+id/editTextF_Name"
+    android:hint="First Name"
+    android:textColorHint="#404040"
+    android:textColor="#000"
+    android:fontFamily="sans-serif-light"
+    android:gravity="center_vertical"
+    android:paddingLeft="20dp"
+    android:textSize="15sp"
+    />
+
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="#fbfefd"
+    android:inputType="textPersonName"
+    android:ems="10"
+    android:layout_below="@+id/editTextF_Name"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:id="@+id/editTextL_Name"
+    android:hint="Last Name"
+    android:textColorHint="#404040"
+    android:textColor="#000"
+    android:paddingLeft="20dp"
+    android:textSize="15sp"
+    android:fontFamily="sans-serif-light"
+    android:gravity="center_vertical"/>
+
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="#fbfefd"
+    android:inputType="textEmailAddress"
+    android:ems="10"
+    android:layout_below="@+id/editTextL_Name"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:id="@+id/editTextEmail"
+    android:hint="Email"
+    android:textColorHint="#404040"
+    android:textColor="#000"
+    android:textSize="15sp"
+    android:paddingLeft="20dp"
+    android:fontFamily="sans-serif-light"
+    android:gravity="center_vertical"/>
+
+
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="#fbfefd"
+    android:inputType="textPassword"
+    android:ems="10"
+    android:layout_below="@+id/editTextEmail"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:id="@+id/editTextPassword"
+    android:hint="Password"
+    android:textColorHint="#404040"
+    android:textColor="#000"
+    android:textSize="15sp"
+    android:paddingLeft="20dp"
+    android:fontFamily="sans-serif-light"
+    android:gravity="center_vertical"/>
+
+<Button
+    android:text="REGISTER"
+    android:background="#ba4a00"
+    android:textColor="#ffffff"
+    android:fontFamily="sans-serif-light"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/editTextPassword"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:id="@+id/Submit" />
+
+<Button
+    android:text="Already Registered? LOG IN"
+    android:fontFamily="sans-serif-light"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/Submit"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="5dp"
+    android:id="@+id/Login" />
+
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/Login"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="14dp"
+    android:src="@drawable/tapaser" />
+
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#fff"
+    tools:context="com.google.android.gms.samples.vision.ocrreader.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/ocr_header"
+        android:textSize="18dp"
+        android:textColor="#2e86c1"
+        android:id="@+id/status_message"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0123456789"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textColorHint="#404040"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/text_value"
+        android:layout_below="@+id/status_message"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="110dp"
+        android:layout_alignRight="@+id/status_message"
+        android:layout_alignEnd="@+id/status_message" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Driver ID"
+        android:textSize="15dp"
+        android:fontFamily="sans-serif-light"
+        android:id="@+id/driver_id"
+        android:layout_below="@id/text_value"
+        android:layout_marginTop="15dp"
+        android:background="#ba4a00"
+        android:textAllCaps="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Car ID"
+        android:textSize="15dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="5dp"
+        android:background="#008000"
+        android:id="@+id/car_id"
+        android:textAllCaps="true"
+        android:layout_below="@id/driver_id"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Help"
+        android:textSize="15dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="5dp"
+        android:background="#404040"
+        android:id="@+id/help_text"
+        android:textAllCaps="true"
+        android:layout_below="@id/car_id"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/read_text"
+        android:textSize="15dp"
+        android:fontFamily="sans-serif-light"
+        android:id="@+id/read_text"
+        android:textAllCaps="true"
+        android:background="#2e86c1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/use_flash"
+        android:fontFamily="sans-serif-light"
+        android:id="@+id/use_flash"
+        android:textColor="#000"
+        android:layout_above="@+id/read_text"
+        android:textAllCaps="true"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/auto_focus"
+        android:textAllCaps="true"
+        android:id="@+id/auto_focus"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#000"
+        android:layout_alignTop="@+id/use_flash"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:checked="true" />
+
+    <ImageButton
+        android:id="@+id/img_LogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/tapaser" />
+
+</RelativeLayout>
