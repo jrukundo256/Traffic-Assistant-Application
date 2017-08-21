@@ -39,6 +39,11 @@ public class CarActivity extends AppCompatActivity implements View.OnClickListen
         textViewResult = (TextView) findViewById(R.id.textViewResult);
 
         buttonGet.setOnClickListener(this);
+        
+        Intent intent = getIntent();
+        String car_no = intent.getStringExtra("carNo");
+        editTextId.setText(car_no);
+        
     }
 
     private void getData() {
