@@ -39,6 +39,10 @@ public class DriverActivity extends AppCompatActivity implements View.OnClickLis
         textViewResult = (TextView) findViewById(R.id.textViewResultDriver);
 
         buttonGet.setOnClickListener(this);
+        
+        Intent intent = getIntent();
+        String driver_no = intent.getStringExtra("driverNo");
+        editTextId.setText(driver_no);
     }
 
     private void getData() {
