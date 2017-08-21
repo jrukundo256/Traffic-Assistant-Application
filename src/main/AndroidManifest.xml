@@ -12,7 +12,7 @@
         android:allowBackup="true"
         android:fullBackupContent="false"
         android:hardwareAccelerated="true"
-        android:icon="@drawable/icon"
+        android:icon="@drawable/tapaser"
         android:label="Traffic Assistant"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat">
