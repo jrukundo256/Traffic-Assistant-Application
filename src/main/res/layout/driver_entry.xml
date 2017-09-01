@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.google.android.gms.samples.vision.ocrreader.DriverEntry"
+android:background="#2e86c1"
+android:padding="20dp">
+
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="30dp"
+    android:background="#fbfefd"
+    android:inputType="textPersonName"
+    android:ems="10"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="2dp"
+    android:id="@+id/permit"
+    android:hint="Permit Number"
+    android:textColorHint="#404040"
+    android:textColor="#000"
+    android:fontFamily="sans-serif-light"
+    android:gravity="center_vertical"
+    android:paddingLeft="20dp"
+    android:textSize="15sp"
+    />
+
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="30dp"
+    android:background="#fbfefd"
+    android:inputType="textPersonName"
+    android:ems="10"
+    android:layout_below="@+id/permit"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:id="@+id/dname"
+    android:hint="Driver's Name"
+    android:textColorHint="#404040"
+    android:textColor="#000"
+    android:paddingLeft="20dp"
+    android:textSize="15sp"
+    android:fontFamily="sans-serif-light"
+    android:gravity="center_vertical"/>
+
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="30dp"
+    android:background="#fbfefd"
+    android:inputType="textEmailAddress"
+    android:ems="10"
+    android:layout_below="@+id/dname"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:id="@+id/dtel"
+    android:hint="Telephone"
+    android:textColorHint="#404040"
+    android:textColor="#000"
+    android:textSize="15sp"
+    android:paddingLeft="20dp"
+    android:fontFamily="sans-serif-light"
+    android:gravity="center_vertical"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#fbfefd"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_below="@+id/dtel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/creg"
+        android:hint="Car Registration Number"
+        android:textColorHint="#404040"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:paddingLeft="20dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_vertical"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#fbfefd"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_below="@+id/creg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/cmake"
+        android:hint="Car Make"
+        android:textColorHint="#404040"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:paddingLeft="20dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_vertical"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#fbfefd"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_below="@+id/cmake"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/offence"
+        android:hint="Offence"
+        android:textColorHint="#404040"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:paddingLeft="20dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_vertical"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#fbfefd"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_below="@+id/offence"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/oplace"
+        android:hint="Place of Offence"
+        android:textColorHint="#404040"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:paddingLeft="20dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_vertical"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#fbfefd"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_below="@+id/oplace"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/odate"
+        android:hint="Date of Offence"
+        android:textColorHint="#404040"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:paddingLeft="20dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_vertical"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#fbfefd"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_below="@+id/odate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/oamt"
+        android:hint="Amount of Fine"
+        android:textColorHint="#404040"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:paddingLeft="20dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_vertical"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#fbfefd"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_below="@+id/oamt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/cown"
+        android:hint="Car Owner"
+        android:textColorHint="#404040"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:paddingLeft="20dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_vertical"/>
+
+
+
+    <Button
+        android:text="SUBMIT CASE"
+        android:background="#008000"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif-light"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cown"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/Submit" />
+
+
+</RelativeLayout>
+
