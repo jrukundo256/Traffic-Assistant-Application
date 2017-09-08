@@ -3,3 +3,5 @@ Traffic Assistant application (TAP) is an android mobile application that employ
 
 
 ![Traffic Assistant](Screenshots.PNG "Traffic Assistant Application")
+
+Youtube: https://youtu.be/J4nKUzhzoqM
